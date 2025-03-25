@@ -135,7 +135,7 @@ BEGIN
 END
 GO
 
---5.Write an SQL query taht retrieves a list of available pets(Those marked as available for adoption)from the "Pets" table, Include th epet's name,age,breed, and type in the result set.Ensure that the query filters out pets that are not available for adoption.
+--5.Write an SQL query taht retrieves a list of available pets(Those marked as available for adoption)from the "Pets" table, Include the pet's name,age,breed, and type in the result set.Ensure that the query filters out pets that are not available for adoption.
 
 SELECT Name, Age, Breed, Type
 FROM Pets 
