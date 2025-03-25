@@ -1,5 +1,10 @@
+--1. Provide a SQL script that initializes the database for the Pet Adoption Platform ”PetPals”. 
+
 CREATE DATABASE PetPals
 USE PetPals
+
+--2. Create tables for pets, shelters, donations, adoption events, and participants.  
+--3. Define appropriate primary keys, foreign keys, and constraints.  
 
 CREATE TABLE Pets
 (PetID int PRIMARY KEY,
@@ -117,6 +122,8 @@ SELECT * FROM Participants
 
 EXEC sp_rename 'Pets.AvailabeForAdaption', 'AvailableForAdoption', 'COLUMN';
 
+--4. Ensure the script handles potential errors, such as if the database or tables already exist. 
+
 IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'PetPals')
 BEGIN
     CREATE DATABASE MyDatabase;
@@ -128,14 +135,25 @@ BEGIN
 END
 GO
 
+--5.Write an SQL query taht retrieves a list of available pets(Those marked as available for adoption)from the "Pets" table, Include th epet's name,age,breed, and type in the result set.Ensure that the query filters out pets that are not available for adoption.
+
 SELECT Name, Age, Breed, Type
 FROM Pets 
 WHERE AvailableForAdoption = 1
+
+/*6. Write an SQL query that retrieves the names of participants (shelters and adopters) registered 
+for a specific adoption event. Use a parameter to specify the event ID. Ensure that the query 
+joins the necessary tables to retrieve the participant names and types.*/
 
 SELECT p.ParticipantName, p.ParticipantType
 FROM Participants p
 JOIN AdoptionEvents e on p.EventID = e.EventID
 WHERE e.EventID = 2
+
+/*8. Write an SQL query that calculates and retrieves the total donation amount for each shelter (by 
+shelter name) from the "Donations" table. The result should include the shelter name and the 
+total donation amount. Ensure that the query handles cases where a shelter has received no 
+donations. */
 
 SELECT s.Name AS ShelterName,
 SUM(d.DonationAmount) AS TotalDonationAmount
@@ -143,9 +161,18 @@ FROM Shelters s
 LEFT JOIN Donations d ON s.Name = d.DonorName
 GROUP BY s.Name
 
+/*9. Write an SQL query that retrieves the names of pets from the "Pets" table that do not have an 
+owner (i.e., where "OwnerID" is null). Include the pet's name, age, breed, and type in the result 
+set. */
+
 SELECT Name, Age, Breed, Type
 FROM Pets
 WHERE AvailableForAdoption = 1 
+
+/*10. Write an SQL query that retrieves the total donation amount for each month and year (e.g., 
+January 2023) from the "Donations" table. The result should include the month-year and the 
+corresponding total donation amount. Ensure that the query handles cases where no donations 
+were made in a specific month-year.*/
 
 SELECT FORMAT(DonationDate, 'MMMM yyyy') AS MonthYear,
 SUM(DonationAmount) AS TotalDonationAmount
@@ -153,47 +180,40 @@ FROM Donations
 GROUP BY FORMAT(DonationDate, 'MMMM yyyy')
 ORDER BY MIN(DonationDate);
 
+/*11. Retrieve a list of distinct breeds for all pets that are either aged between 1 and 3 years or older 
+than 5 years. */
+
 SELECT DISTINCT Breed
 FROM Pets
 WHERE (Age between 1 and 3) or Age > 5
 
-ALTER TABLE Pets
-ADD ShelterID int;
-
-UPDATE Pets SET ShelterID = 1 WHERE PetID = 1;
-UPDATE Pets SET ShelterID = 2 WHERE PetID = 2;
-UPDATE Pets SET ShelterID = 3 WHERE PetID = 3;
-UPDATE Pets SET ShelterID = 4 WHERE PetID = 4;
-UPDATE Pets SET ShelterID = 5 WHERE PetID = 5;
-UPDATE Pets SET ShelterID = 1 WHERE PetID = 6;
-UPDATE Pets SET ShelterID = 2 WHERE PetID = 7;
-UPDATE Pets SET ShelterID = 3 WHERE PetID = 8;
-UPDATE Pets SET ShelterID = 4 WHERE PetID = 9;
-UPDATE Pets SET ShelterID = 5 WHERE PetID = 10;
-UPDATE Pets SET ShelterID = 1 WHERE PetID = 11;
-UPDATE Pets SET ShelterID = 2 WHERE PetID = 12;
-UPDATE Pets SET ShelterID = 3 WHERE PetID = 13;
-UPDATE Pets SET ShelterID = 4 WHERE PetID = 14;
-UPDATE Pets SET ShelterID = 5 WHERE PetID = 15;
-
-
-SELECT * FROM Pets
+/*12. Retrieve a list of pets and their respective shelters where the pets are currently available for 
+adoption. */
 
 SELECT p.Name, p.Age, p.Breed, p.Type,
 s.Name as ShelterName
 FROM Pets p, Shelters s
 WHERE (p.ShelterID = s.ShelterId) and  (p.AvailableForAdoption = 1)
 
+/*13. Find the total number of participants in events organized by shelters located in specific city. 
+Example: City=Chennai */
+
 SELECT COUNT(p.ParticipantName) as Total_No_Participants
 FROM Participants p, AdoptionEvents e
 WHERE (p.EventID = e.EventID) and (e.Location = 'Chennai')
+
+/*14. Retrieve a list of unique breeds for pets with ages between 1 and 5 years.*/
 
 SELECT DISTINCT Breed
 FROM Pets
 WHERE Age between 1 and 5
 
-Select * FROM Pets
+/*15. Find the pets that have not been adopted by selecting their information from the 'Pet' table. */
+
+Select Name, Age, Breed, Type 
+FROM Pets
 WHERE AvailableForAdoption = 1
+
 
 CREATE TABLE [User] (
     AdoptionID INT PRIMARY KEY IDENTITY(1,1),
@@ -213,9 +233,15 @@ VALUES
 
 SELECT * FROM [User]
 
+/*16. Retrieve the names of all adopted pets along with the adopter's name from the 'Adoption' and 
+'User' tables. */
+
 SELECT p.Name as PetName, u.AdopterName
 FROM Pets p, [User] u
 WHERE p.PetID = u.PetID
+
+/*17. Retrieve a list of all shelters along with the count of pets currently available for adoption in each 
+shelter. */
 
 SELECT s.Name AS ShelterName,
 COUNT(p.PetID) AS AvailablePetsCount
@@ -223,24 +249,20 @@ FROM Shelters s
 LEFT JOIN Pets p ON s.ShelterID = p.ShelterID AND p.AvailableForAdoption = 1
 GROUP BY s.Name
 
+/*18. Find pairs of pets from the same shelter that have the same breed. */
+
 SELECT p.Name, p.Age, p.Breed, p.Type,
 s.Name as ShelterName
 FROM Pets p, Shelters s
 WHERE (p.ShelterID = s.ShelterID) and Breed = 'Indian'
 
-SELECT Name, Breed, ShelterID  
-FROM Pets  
-WHERE Breed IN (  
-SELECT Breed  
-FROM Pets  
-GROUP BY Breed, ShelterID  
-HAVING COUNT(*) > 1  
-)  
-ORDER BY ShelterID, Breed;
+/*19. List all possible combinations of shelters and adoption events. */
 
 SELECT s.Name as ShelterName, e.EventName as AdoptionEvent
 FROM Shelters s, AdoptionEvents e
 ORDER BY s.Name, e.EventName;
+
+/*20. Determine the shelter that has the highest number of adopted pets. */
 
 SELECT TOP 1 s.Name AS ShelterName, 
 COUNT(p.PetID) AS AdoptedPetsCount
