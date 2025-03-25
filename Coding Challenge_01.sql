@@ -117,6 +117,17 @@ SELECT * FROM Participants
 
 EXEC sp_rename 'Pets.AvailabeForAdaption', 'AvailableForAdoption', 'COLUMN';
 
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'PetPals')
+BEGIN
+    CREATE DATABASE MyDatabase;
+    PRINT 'Database PetPals created successfully.';
+END
+ELSE
+BEGIN
+    PRINT 'Database PetPals already exists.';
+END
+GO
+
 SELECT Name, Age, Breed, Type
 FROM Pets 
 WHERE AvailableForAdoption = 1
