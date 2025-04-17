@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\main\\mainmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\main\\mainmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\dao\\hospitalserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\dao\\hospitalserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\util\\dbpropertyutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\util\\dbpropertyutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\util\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\util\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\hospitalmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\hospitalmanagementsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\exception\\patientnumbernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\exception\\patientnumbernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\db.properties||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\db.properties||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\dao\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\dao\\ihospitalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\entity\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\entity\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\entity\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\entity\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|e:\\hexaware\\coding challenge\\saravanapriya_hexa_codingchallenge\\hospitalmanagementsystem\\hospitalmanagementsystem\\entity\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2AA4BC-7438-4A90-BFC9-F62D0E8AD12A}|HospitalManagementSystem\\HospitalManagementSystem.csproj|solutionrelative:hospitalmanagementsystem\\entity\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainModule.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\main\\MainModule.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\main\\MainModule.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\main\\MainModule.cs",
+              "RelativeToolTip": "HospitalManagementSystem\\main\\MainModule.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwB0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:23:33.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HospitalServiceImpl.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\dao\\HospitalServiceImpl.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\dao\\HospitalServiceImpl.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\dao\\HospitalServiceImpl.cs*",
+              "RelativeToolTip": "HospitalManagementSystem\\dao\\HospitalServiceImpl.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:37:23.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HospitalManagementSystem",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\HospitalManagementSystem.csproj",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+              "RelativeToolTip": "HospitalManagementSystem\\HospitalManagementSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-17T04:24:01.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\util\\DBConnection.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\util\\DBConnection.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\util\\DBConnection.cs",
+              "RelativeToolTip": "HospitalManagementSystem\\util\\DBConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:49:05.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientNumberNotFoundException.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\exception\\PatientNumberNotFoundException.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\exception\\PatientNumberNotFoundException.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\exception\\PatientNumberNotFoundException.cs",
+              "RelativeToolTip": "HospitalManagementSystem\\exception\\PatientNumberNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:55:16.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DBPropertyUtil.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\util\\DBPropertyUtil.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\util\\DBPropertyUtil.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\util\\DBPropertyUtil.cs",
+              "RelativeToolTip": "HospitalManagementSystem\\util\\DBPropertyUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:47:41.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "db.properties",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\db.properties",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\db.properties",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\db.properties",
+              "RelativeToolTip": "HospitalManagementSystem\\db.properties",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-17T04:44:25.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IHospitalService.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\dao\\IHospitalService.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\dao\\IHospitalService.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\dao\\IHospitalService.cs",
+              "RelativeToolTip": "HospitalManagementSystem\\dao\\IHospitalService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:32:16.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\entity\\Appointment.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\entity\\Appointment.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\entity\\Appointment.cs",
+              "RelativeToolTip": "HospitalManagementSystem\\entity\\Appointment.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:26:08.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\entity\\Doctor.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\entity\\Doctor.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\entity\\Doctor.cs",
+              "RelativeToolTip": "HospitalManagementSystem\\entity\\Doctor.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:25:55.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\entity\\Patient.cs",
+              "RelativeDocumentMoniker": "HospitalManagementSystem\\entity\\Patient.cs",
+              "ToolTip": "E:\\Hexaware\\Coding Challenge\\Saravanapriya_Hexa_CodingChallenge\\HospitalManagementSystem\\HospitalManagementSystem\\entity\\Patient.cs",
+              "RelativeToolTip": "HospitalManagementSystem\\entity\\Patient.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T04:25:44.445Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

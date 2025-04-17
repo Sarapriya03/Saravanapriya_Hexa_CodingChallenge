@@ -169,6 +169,10 @@ SELECT Name, Age, Breed, Type
 FROM Pets
 WHERE AvailableForAdoption = 1 
 
+UPDATE Donations
+SET DonationDate = '2024-01-30 10:30:00.000' 
+WHERE DonationID in (1,3,5)
+
 /*10. Write an SQL query that retrieves the total donation amount for each month and year (e.g., 
 January 2023) from the "Donations" table. The result should include the month-year and the 
 corresponding total donation amount. Ensure that the query handles cases where no donations 
