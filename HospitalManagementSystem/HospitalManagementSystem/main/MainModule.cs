@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using HospitalManagementSystem.dao;
 using HospitalManagementSystem.entity;
 using HospitalManagementSystem.util;
-using HospitalManagementSystem.exception;
+using HospitalManagementSystem.myexceptions;
 
 namespace HospitalManagementSystem.main
 {
@@ -22,10 +22,10 @@ namespace HospitalManagementSystem.main
                 while (!exit)
                 {
                     Console.WriteLine("\n=== Hospital Management System ===");
-                    Console.WriteLine("1. Schedule Appointment");
-                    Console.WriteLine("2. Get Appointment by ID");
-                    Console.WriteLine("3. Get Appointments for Patient");
-                    Console.WriteLine("4. Get Appointments for Doctor");
+                    Console.WriteLine("1. Get Appointment by ID");
+                    Console.WriteLine("2. Get Appointments for Patient");
+                    Console.WriteLine("3. Get Appointments for Doctor");
+                    Console.WriteLine("4. Schedule Appointment");
                     Console.WriteLine("5. Update Appointment");
                     Console.WriteLine("6. Cancel Appointment");
                     Console.WriteLine("7. Exit");
@@ -35,18 +35,6 @@ namespace HospitalManagementSystem.main
                     switch (choice)
                     {
                         case "1":
-                            Console.Write("Enter Patient ID: ");
-                            int pId = int.Parse(Console.ReadLine());
-                            Console.Write("Enter Doctor ID: ");
-                            int dId = int.Parse(Console.ReadLine());
-                            Console.Write("Enter Description: ");
-                            string desc = Console.ReadLine();
-                            Appointment newAppointment = new Appointment(0, pId, dId, DateTime.Now.AddDays(1), desc);
-                            bool isScheduled = service.ScheduleAppointment(newAppointment);
-                            Console.WriteLine("Appointment Scheduled: " + isScheduled);
-                            break;
-
-                        case "2":
                             Console.Write("Enter Appointment ID: ");
                             int aid = int.Parse(Console.ReadLine());
                             Appointment appt = service.GetAppointmentById(aid);
@@ -56,7 +44,7 @@ namespace HospitalManagementSystem.main
                                 Console.WriteLine("No appointment found.");
                             break;
 
-                        case "3":
+                        case "2":
                             Console.Write("Enter Patient ID: ");
                             int patientId = int.Parse(Console.ReadLine());
                             var patientAppointments = service.GetAppointmentsForPatient(patientId);
@@ -66,12 +54,24 @@ namespace HospitalManagementSystem.main
                                 a.PrintDetails();
                             break;
 
-                        case "4":
+                        case "3":
                             Console.Write("Enter Doctor ID: ");
                             int doctorId = int.Parse(Console.ReadLine());
                             var doctorAppointments = service.GetAppointmentsForDoctor(doctorId);
                             foreach (var a in doctorAppointments)
                                 a.PrintDetails();
+                            break;
+
+                        case "4":
+                            Console.Write("Enter Patient ID: ");
+                            int pId = int.Parse(Console.ReadLine());
+                            Console.Write("Enter Doctor ID: ");
+                            int dId = int.Parse(Console.ReadLine());
+                            Console.Write("Enter Description: ");
+                            string desc = Console.ReadLine();
+                            Appointment newAppointment = new Appointment(0, pId, dId, DateTime.Now.AddDays(1), desc);
+                            bool isScheduled = service.ScheduleAppointment(newAppointment);
+                            Console.WriteLine("Appointment Scheduled: " + isScheduled);
                             break;
 
                         case "5":
